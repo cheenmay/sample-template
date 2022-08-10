@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #1F1D36;
+    color: #E9A6A6;
+}
+/* Loader */
+.loader{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1F1D36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+.loader img{
+    animation: spin 2s infinite;
+}
+@keyframes fadeOut {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* Navbar */
+.navbar{
+    background: #1F1D36;
+    padding: 15px;
+}
+.navbar img{
+    width: 12%;
+}
+.nav-item{
+    padding-left: 15px;
+}
+.nav-link{
+    color: #864879 !important;
+    font-weight: 500;
+    padding-left: 5px;
+}
+.nav-link:hover{
+    color: #E9A6A6 !important;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+/* carousal */
+.carousel-part .carousel-item{
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.content-1 .container .row .col{
+    align-items: center;
+}
+
+/* text-banner */
+.text-banner{
+    text-align: center;
+    padding: 20px;
+}
+
+/* card */
+.card{
+    border: none;
+    margin: 20px;
+}
+.card:hover{
+    box-shadow: 0 14px 28px #7C83FD, 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.3s;
+}
+.card .card-body{
+    background: #864879;
+}
+.card .card-title, .card-text{
+    background: #864879;
+    color: #E9A6A6;
+}
+
+/* Content-2 */
+.paragraph{
+    padding: 20px 150px 50px 150px;
+}
+.paragraph img{
+    width: 100%;
+}
+.content-3{
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-bar{
+    background: #3F3351;
+    padding: 100px;
+    text-align: center;
+}
+.footer-bar .material-icons{
+    background: #3F3351;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+.footer-bar a{
+    text-decoration: none;
+    color: #E9A6A6;
+    background: #3F3351;
+}
+.copyright{
+    text-align: center;
+    background: #3F3351;
+    font-size: 18px;
+    padding: 10px;
+}
+.copyright .material-icons{
+    text-align: center;
+    background: #3F3351;
+    font-size: 15px;
+}
+
+.form-format{
+    padding: auto;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+}
+
+
